@@ -52,6 +52,11 @@
               tools:layout="@layout/fragment_made_it_to_school">
         <action android:id="@+id/action_madeItToSchool_to_titleFragment"
                 app:destination="@id/titleFragment"
-                app:popUpTo="@+id/titleFragment" app:popUpToInclusive="false"/>
+                app:popUpTo="@+id/titleFragment"
+                app:popUpToInclusive="false"/>
     </fragment>
+    <fragment android:id="@+id/aboutFragment"
+              android:name="jenn.codes.chooseadventureexample.About"
+              android:label="About"
+              tools:layout="@layout/fragment_about"/>
 </navigation>
