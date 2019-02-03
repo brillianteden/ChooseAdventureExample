@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools">
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- Don't forget the ScrollView -->
     <ScrollView
@@ -14,12 +14,15 @@
                 android:layout_height="match_parent"
                 tools:context=".MainActivity">
 
-            <!-- The Title Fragement -->
+            <!-- The NavHostFragment within the activity_main layout -->
             <fragment
                     android:id="@+id/myNavHostFragment"
-                    android:name="jenn.codes.chooseadventureexample.TitleFragment"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    app:navGraph="@navigation/navigation"
+                    app:defaultNavHost="true"
+            />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>

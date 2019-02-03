@@ -1,4 +1,33 @@
 <resources>
     <string name="app_name">ChooseAdventureExample</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play">Play</string>
+    <string name="ferris_bueller_smiling">Ferris Bueller Smiling</string>
+    <string name="back_of_the_bus_story">You see your friend, Georgina, in the back of the bus. You
+        go join her. A strange looking individual asks you if he can borrow a pen. You hand it to him
+        while listening to Georgina\'s long story about the boy she likes. A few minutes pass and the bus
+        stops at some train tracks. Suddenly, your eyes start watering, what is that horrible smell?
+        The individual who borrowed your pen opens up the emergency exit at the back of the bus and
+        jumps out, laughing along the way. The whole bus smells like rotten eggs. Apparently, he used
+        your pen to open up a giant stink bomb on the bus. Finally the chaos settles and the bus is
+        cleaned out and reboarded.
+
+    </string>
+    <string name="front_of_the_bus_story">You climb onto the bus and greet the bus driver. You notice
+        a strange individual in the back whispering to your friend Georgina, you\'d like to talk to
+        Georgina but something about that hoodlum doesn\'t seem right. Georgina clutches her bag tightly
+        and moves away from the stranger, as does the other individuals sitting near him. You sit in
+        the front row. The bus ride proceeds smoothly and arrives at the school.
+
+    </string>
+    <string name="chose_to_sit_in_back_title">Chose to Sit In Back</string>
+    <string name="next">Next</string>
+    <string name="try_again">Try Again</string>
+    <string name="play_again">Play Again</string>
+    <string name="made_it_to_school">Made it to school</string>
+    <string name="you_have_chosen_to_walk_to_school">You have chosen to walk to school. As you leave
+        your house, you see your friends off in the distance. A car pulls up and blocks their view of you
+        while they turn the corner. You contimplate whether you\'d get to school faster if you caught up
+        with them, or if you walked alone. Which would be the better choice today?</string>
 </resources>
+
