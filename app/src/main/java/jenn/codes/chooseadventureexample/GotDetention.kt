@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import jenn.codes.chooseadventureexample.R
 import jenn.codes.chooseadventureexample.databinding.FragmentGotDetentionBinding
 
@@ -19,7 +20,9 @@ class GotDetention : Fragment() {
         // Inflate the layout for this fragment
         val binding: FragmentGotDetentionBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_got_detention, container, false)
-
+        binding.btnTryAgain.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_gotDetention_to_titleFragment)
+        }
         return binding.root
     }
 }

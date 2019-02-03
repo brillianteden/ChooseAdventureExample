@@ -39,10 +39,19 @@
     <fragment android:id="@+id/gotDetention"
               android:name="jenn.codes.chooseyourownadventure.GotDetention"
               android:label="Got Detention!"
-              tools:layout="@layout/fragment_got_detention"/>
+              tools:layout="@layout/fragment_got_detention">
+        <action android:id="@+id/action_gotDetention_to_titleFragment"
+                app:destination="@id/titleFragment"
+                app:popUpTo="@+id/titleFragment"
+                app:popUpToInclusive="false"/>
+    </fragment>
 
     <fragment android:id="@+id/madeItToSchool"
               android:name="jenn.codes.chooseyourownadventure.MadeItToSchool"
               android:label="Made It To School"
-              tools:layout="@layout/fragment_made_it_to_school"/>
+              tools:layout="@layout/fragment_made_it_to_school">
+        <action android:id="@+id/action_madeItToSchool_to_titleFragment"
+                app:destination="@id/titleFragment"
+                app:popUpTo="@+id/titleFragment" app:popUpToInclusive="false"/>
+    </fragment>
 </navigation>
