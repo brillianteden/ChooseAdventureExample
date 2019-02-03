@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import jenn.codes.chooseadventureexample.R
 import jenn.codes.chooseadventureexample.databinding.FragmentAloneBinding
 
@@ -16,7 +17,8 @@ class Alone : Fragment() {
         // Inflate the layout for this fragment
         val binding: FragmentAloneBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_alone, container, false)
-
+        binding.btnWalkAloneNext.setOnClickListener (
+            Navigation.createNavigateOnClickListener(R.id.action_alone_to_madeItToSchool))
         return binding.root
     }
 }

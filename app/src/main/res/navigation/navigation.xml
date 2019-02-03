@@ -23,10 +23,26 @@
     <fragment android:id="@+id/withFriends"
               android:name="jenn.codes.chooseyourownadventure.WithFriends"
               android:label="With Friends"
-              tools:layout="@layout/fragment_with_friends"/>
+              tools:layout="@layout/fragment_with_friends">
+        <action android:id="@+id/action_withFriends_to_gotDetention" app:destination="@id/gotDetention"
+                app:popUpTo="@+id/walk" app:popUpToInclusive="true"/>
+    </fragment>
 
     <fragment android:id="@+id/alone"
               android:name="jenn.codes.chooseyourownadventure.Alone"
               android:label="Alone"
-              tools:layout="@layout/fragment_alone"/>
+              tools:layout="@layout/fragment_alone">
+        <action android:id="@+id/action_alone_to_madeItToSchool" app:destination="@id/madeItToSchool"
+                app:popUpTo="@+id/walk" app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment android:id="@+id/gotDetention"
+              android:name="jenn.codes.chooseyourownadventure.GotDetention"
+              android:label="Got Detention!"
+              tools:layout="@layout/fragment_got_detention"/>
+
+    <fragment android:id="@+id/madeItToSchool"
+              android:name="jenn.codes.chooseyourownadventure.MadeItToSchool"
+              android:label="Made It To School"
+              tools:layout="@layout/fragment_made_it_to_school"/>
 </navigation>
