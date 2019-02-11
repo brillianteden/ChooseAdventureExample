@@ -30,7 +30,6 @@ android {
 
 dependencies {
 
-
     //Some dependencies below were added
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])

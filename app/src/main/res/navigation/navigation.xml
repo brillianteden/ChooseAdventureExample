@@ -2,31 +2,23 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/navigation" app:startDestination="@id/titleFragment">
+            android:id="@+id/navigation" app:startDestination="@id/splashFragment">
 
     <fragment android:id="@+id/titleFragment"
               android:name="jenn.codes.chooseadventureexample.TitleFragment"
               android:label="Go to School"
               tools:layout="@layout/fragment_title">
-        <action android:id="@+id/action_titleFragment_to_walk"
-                app:destination="@id/walk"/>
+        <action android:id="@+id/action_titleFragment_to_alone" app:destination="@id/alone"/>
+        <action android:id="@+id/action_titleFragment_to_alone2" app:destination="@id/alone"/>
     </fragment>
-
-    <fragment android:id="@+id/walk"
-              android:name="jenn.codes.chooseyourownadventure.Walk"
-              android:label="Walk"
-              tools:layout="@layout/fragment_walk">
-        <action android:id="@+id/action_walk_to_withFriends" app:destination="@id/withFriends"/>
-        <action android:id="@+id/action_walk_to_alone" app:destination="@id/alone"/>
-    </fragment>
-
-    <fragment android:id="@+id/withFriends"
-              android:name="jenn.codes.chooseyourownadventure.WithFriends"
-              android:label="With Friends"
-              tools:layout="@layout/fragment_with_friends"/>
 
     <fragment android:id="@+id/alone"
               android:name="jenn.codes.chooseyourownadventure.Alone"
               android:label="Alone"
               tools:layout="@layout/fragment_alone"/>
+    <fragment android:id="@+id/splashFragment" android:name="jenn.codes.chooseadventureexample.SplashFragment"
+              android:label="fragment_splash" tools:layout="@layout/fragment_splash">
+        <action android:id="@+id/action_splashFragment2_to_titleFragment" app:destination="@id/titleFragment"/>
+        <action android:id="@+id/action_splashFragment_to_titleFragment" app:destination="@id/titleFragment"/>
+    </fragment>
 </navigation>

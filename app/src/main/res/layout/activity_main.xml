@@ -15,6 +15,7 @@
                 tools:context=".MainActivity">
 
             <!-- The NavHostFragment within the activity_main layout -->
+
             <fragment
                     android:id="@+id/myNavHostFragment"
                     android:name="androidx.navigation.fragment.NavHostFragment"
