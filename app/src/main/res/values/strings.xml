@@ -7,28 +7,93 @@
     <string name="name_hint">Enter Your Name</string>
     <string name="mTopButton0">Cut through woods.</string>
     <string name="mBottomButton0">Keep to the road.</string>
-    <string name="next">next</string>
+    <string name="playAgain">Play Again</string>
     <string name="mTopButton1">Follow the sound.</string>
     <string name="mBottomButton1">Stay on the path.</string>
     <string name="txtTitle1">Going into the woods</string>
     <string-array name="mTopButtonArray">
-        <item>Cut through the woods</item>
-        <item>Follow the sound</item>
+        <item>0Cut through the woods</item>
+        <item>1Follow the sound</item>
+        <item>2Keep to the road</item>
+        <item>3Keep searching for the path</item>
+        <item>4Knock on the door</item>
+        <item>5Look for shelter</item>
+        <item>6So many buttons</item>
+        <item>7Get in</item>
+        <item>8??</item>
+        <item>9</item>
+
     </string-array>
     <string-array name="mBottomButtonArray">
-        <item>Keep to the road</item>
-        <item>Stay on the path</item>
+        <item>0Keep to the road</item>
+        <item>1Stay on the path</item>
+        <item>2Look for shelter</item>
+        <item>3Look for shelter</item>
+        <item>4Explore the area</item>
+        <item>5Drink and keep going</item>
+        <item>6So many buttons</item>
+        <item>7Decline the ride</item>
+        <item>8??</item>
+
     </string-array>
     <string-array name="mTxtTitleArray">
-        <item>You broke down</item>
-        <item>Going into the woods</item>
+        <item>0You broke down</item>
+        <item>1The woods are lovely</item>
+        <item>2You begin to backtrack</item>
+        <item>3You are lost</item>
+        <item>4The path ends</item>
+        <item>5The forest opens</item>
+        <item>6All of the things</item>
+        <item>7You glad down a car</item>
+        <item>8??</item>
+        <item>9You are eaten by wolves</item>
     </string-array>
     <string-array name="mTxtBodyArray">
-        <item>Night will fall before you can reach civilization by road,
+        <item>0Night will fall before you can reach civilization by road,
             but a nearby path leads into the forest.</item>
-        <item>As you follow the path, it begins to wind. An hour in,
+        <item>1As you follow the path, it begins to wind. An hour in,
             you hear a voice calling for help.</item>
-        <item>The sun sets as you walk along the road.</item>
-
+        <item>2The sun sets as you walk along the road.</item>
+        <item>3You venture off the path, but cannot locate the source of
+            the cries. You cannot find the path you left.</item>
+        <item>4You find yourself in an open area with a small cabin. As
+            the path is well worn, it is likely still in use.</item>
+        <item>5While you do not find the path, you happen upon a clearing
+            with an amazing waterfall! At least you have fresh water.</item>
+        <item>6More text please</item>
+        <item>7The vehicle stops, and the occupant seems friendly enough.
+            She offers to take you to the nearest town.</item>
+        <item>8??</item>
+        <item>9Your body is never found.</item>
+    </string-array>
+    <string-array name="mTxtEndTitleArray">
+        <item>0You broke down</item>
+        <item>1The woods are lovely</item>
+        <item>2You begin to backtrack</item>
+        <item>3You are lost</item>
+        <item>4The path ends</item>
+        <item>5The forest opens</item>
+        <item>6All of the things</item>
+        <item>7You glad down a car</item>
+        <item>8??</item>
+        <item>9You are eaten by wolves</item>
+    </string-array>
+    <string-array name="mTxtEndBodyArray">
+        <item>0Night will fall before you can reach civilization by road,
+            but a nearby path leads into the forest.</item>
+        <item>1As you follow the path, it begins to wind. An hour in,
+            you hear a voice calling for help.</item>
+        <item>2The sun sets as you walk along the road.</item>
+        <item>3You venture off the path, but cannot locate the source of
+            the cries. You cannot find the path you left.</item>
+        <item>4You find yourself in an open area with a small cabin. As
+            the path is well worn, it is likely still in use.</item>
+        <item>5While you do not find the path, you happen upon a clearing
+            with an amazing waterfall! At least you have fresh water.</item>
+        <item>6More text please</item>
+        <item>7The vehicle stops, and the occupant seems friendly enough.
+            She offers to take you to the nearest town.</item>
+        <item>8??</item>
+        <item>9Your body is never found.</item>
     </string-array>
 </resources>

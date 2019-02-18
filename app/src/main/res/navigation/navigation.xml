@@ -2,23 +2,35 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/navigation" app:startDestination="@id/splashFragment">
+            android:id="@+id/navigation"
+            app:startDestination="@id/splashFragment">
 
     <fragment android:id="@+id/titleFragment"
               android:name="jenn.codes.chooseadventureexample.TitleFragment"
-              android:label="Go to School"
+              android:label="fragment_title"
               tools:layout="@layout/fragment_title">
-        <action android:id="@+id/action_titleFragment_to_alone" app:destination="@id/alone"/>
-        <action android:id="@+id/action_titleFragment_to_alone2" app:destination="@id/alone"/>
+        <action android:id="@+id/endAction"
+                app:destination="@id/endFragment"
+                app:exitAnim="@anim/fade_out"/>
     </fragment>
 
-    <fragment android:id="@+id/alone"
-              android:name="jenn.codes.chooseyourownadventure.Alone"
-              android:label="Alone"
-              tools:layout="@layout/fragment_alone"/>
-    <fragment android:id="@+id/splashFragment" android:name="jenn.codes.chooseadventureexample.SplashFragment"
-              android:label="fragment_splash" tools:layout="@layout/fragment_splash">
-        <action android:id="@+id/action_splashFragment2_to_titleFragment" app:destination="@id/titleFragment"/>
-        <action android:id="@+id/action_splashFragment_to_titleFragment" app:destination="@id/titleFragment"/>
+    <fragment android:id="@+id/endFragment"
+              android:name="jenn.codes.chooseyourownadventure.EndFragment"
+              android:label="fragment_end"
+              tools:layout="@layout/fragment_end">
+        <action android:id="@+id/restartAction"
+                app:destination="@id/splashFragment"
+                app:exitAnim="@anim/fade_out"/>
+        <argument android:name="mStoryIndex"
+                  app:argType="integer"
+                  android:defaultValue="1"/>
+    </fragment>
+    <fragment android:id="@+id/splashFragment"
+              android:name="jenn.codes.chooseadventureexample.SplashFragment"
+              android:label="fragment_splash"
+              tools:layout="@layout/fragment_splash">
+        <action android:id="@+id/startAction"
+                app:destination="@id/titleFragment"
+                app:exitAnim="@anim/fade_out"/>
     </fragment>
 </navigation>
